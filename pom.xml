@@ -37,7 +37,7 @@
 	</dependencies>
 
 	<build>
-		<sourceDirectory>src/main/resource</sourceDirectory>
+		<sourceDirectory>src/main/java</sourceDirectory>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -51,7 +51,7 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<version>3.2.1</version>
 				<configuration>
-					<warSourceDirectory>webapp</warSourceDirectory>
+					<warSourceDirectory>src/main/webapp</warSourceDirectory>
 				</configuration>
 			</plugin>
 		</plugins>
