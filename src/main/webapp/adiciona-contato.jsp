@@ -54,8 +54,29 @@
 						</div>
 
 						<div class="form-group col-md-6">
-							<label for="end">Endereço</label> 
-							<input type="text" value="${param.endereco}" class="form-control" id="end" name="endereco" placeholder="Endereço">
+							<label for="logradouro">Logradouro</label> 
+							<input type="text" value="${param.logradouro}" class="form-control" id="logradouro" name="logradouro" placeholder="Logradouro">
+						</div>
+
+						<!-- <div class="form-group col-md-6">
+							<button class="btn btn-success" id="btnSalvar" type="submit">Salvar</button>
+						</div> -->
+					</div>
+					
+					<div class="form-row">
+						<div class="form-group col-md-3">
+							<label for="sex">Sexo</label> 
+							<input type="text" value="${param.sexo}" class="form-control" id="sex" name="sexo" placeholder="Sexo">
+						</div>
+
+						<div class="form-group col-md-3">
+							<label for="idade">Idade</label> 
+							<input type="date" value="${param.idade}" class="form-control" id="idade" name="idade" placeholder="Idade">
+						</div>
+
+						<div class="form-group col-md-6">
+							<label for="cep">CEP</label> 
+							<input type="text" value="${param.cep}" class="form-control" id="cep" name="cep" placeholder="CEP">
 						</div>
 
 						<div class="form-group col-md-6">

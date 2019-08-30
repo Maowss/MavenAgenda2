@@ -47,10 +47,10 @@
 					
 					<c:forEach var="pessoa" items="${contatos}">
 						<tr>
-							<td>${pessoa.nome}</td>
+							<%-- <td>${pessoa.nome}</td> --%>
 							<td>${pessoa.email}</td>
-							<td>${pessoa.endereco}</td>
-							<td>${pessoa.telefone}</td>
+<%-- 							<td>${pessoa.endereco}</td>
+ --%>							<td>${pessoa.telefone}</td>
 							<td>
 								<a href="#" onclick="saveContactId(${pessoa.id})" data-toggle="modal" data-target="#modalExemplo">Remover</a>
 								<span> | </span>

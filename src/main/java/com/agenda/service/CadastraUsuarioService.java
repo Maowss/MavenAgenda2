@@ -12,19 +12,24 @@ public class CadastraUsuarioService {
 	public CadastraUsuarioService() {
 		this.dao = new PessoaDAO();
 	}
+	
 
-	public void salvarOuAtualizar(Pessoa pessoa) {
-
-		if (pessoa.getId() == 0) {
-			this.dao.cadastrar(pessoa);
-		} else {
-			this.dao.alterar(pessoa);
-		}
+//	public void salvarOuAtualizar(Pessoa pessoa) {
+//
+//		if (pessoa.getId() == 0) {
+//			this.dao.cadastrar(pessoa);
+//		} else {
+//			this.dao.alterar(pessoa);
+//		}
+//	}
+	
+	public void Cadastrar(Pessoa pessoa) {
+		this.dao.cadastrar(pessoa);
 	}
 
 	public List<Pessoa> buscaPessoas() {
 		return this.dao.buscarPessoas();
-	}
+	}	
 
 	public void remover(Pessoa pessoa) {
 		this.dao.remover(pessoa);
